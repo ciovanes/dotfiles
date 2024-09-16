@@ -1,0 +1,23 @@
+[user]
+	name = ciovanes
+	email = 
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[alias]
+	st = status
+	l = log
+	ll = log --oneline
+	last = log -1 HEAD --stat
+	br = branch
+	brf = branch --format='%(color:yellow)%(refname:short)%(color:reset), %(contents:subject) %(color:green)(%(committerdate:relative)) -> [%(authorname)]' --sort=-committerdate
+	ch = checkout
+	co = commit
+	sw = switch
+	bc = switch -c
+	graph = log --graph --decorate --oneline
+	undo = reset --soft HEAD^
+	rank = shortlog -sn --no-merges
+	fresh = !git reset --hard HEAD && git clean -f -d
+	alias = config --get-regexp ^alias\
