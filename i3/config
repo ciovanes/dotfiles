@@ -19,7 +19,8 @@ bindsym $mod+b exec brave
 bindsym $mod+Shift+b exec brave --incognito
 
 # start dmenu 
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show drun -font "Ubuntu Mono 11" -location 1 -width 30 -lines 1 -padding 0 -theme gruvbox-dark
 
 # kill focused window
 bindsym $mod+q kill
